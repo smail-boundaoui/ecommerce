@@ -31,6 +31,7 @@ export default function App({ Component, pageProps: { session, ...pageProps } })
         <meta charSet="UTF-8" />
         <meta name="description" content="E-Commerce Online Shop with NextJS & MongoDB" />
         <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=1400" />
         <title>Shop Online - Admin</title>
       </Head>
       <SessionProvider session={session}>
