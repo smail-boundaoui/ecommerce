@@ -1,0 +1,182 @@
+.product {
+  width: 600px;
+  margin: auto;
+}
+
+.product h2 {
+  margin-bottom: 30px;
+}
+
+.product form {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 20px 0;
+}
+
+.product .err-message,
+.product .added-message {
+  color: #fff;
+  padding: 8px;
+  border-radius: 4px;
+}
+
+.product .err-message {
+  background: var(--del-color);
+}
+.product .added-message {
+  background: var(--green-color);
+}
+
+.product .inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 10px 0;
+}
+
+.product .inputs * {
+  padding: 8px;
+  border-radius: 3px;
+}
+
+.product .inputs textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.product .images {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.product .images .image {
+  width: 100px;
+  height: 100px;
+  background-color: #ccc;
+  border-radius: 6px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.product .images .image:hover span {
+  opacity: 1;
+}
+
+.product .images .image:hover::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #0000008f;
+  top: 0;
+  left: 0;
+}
+
+.product .images .image span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background: #fff;
+  border-radius: 50%;
+  cursor: pointer;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.product .images .image img {
+  max-width: 100%;
+}
+
+.product .images .upload {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  background-color: #ccc;
+  color: #333;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+}
+
+.product .images .upload:hover {
+  box-shadow: 0 0 3px #444;
+}
+
+.product .images .upload:hover svg {
+  animation-name: fa-bounce;
+  animation-delay: var(--fa-animation-delay, 0s);
+  animation-direction: var(--fa-animation-direction, normal);
+  animation-duration: var(--fa-animation-duration, 1s);
+  animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+  animation-timing-function: var(--fa-animation-timing, cubic-bezier(0.28, 0.84, 0.42, 1));
+}
+
+.product .images .upload span {
+  margin-left: 6px;
+}
+.product .images .upload input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  cursor: pointer;
+  z-index: 5;
+}
+
+.product .options .select {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #ddd;
+  padding: 10px;
+  border-radius: 3px;
+}
+
+.product .options .select:first-of-type {
+  border: 1px solid #000;
+  margin-bottom: 30px;
+}
+
+.product .options .select:not(:first-of-type) {
+  margin-top: 10px;
+}
+
+.product .options .select label {
+  min-width: 150px;
+  font-weight: 500;
+}
+
+.product .options .select select {
+  cursor: pointer;
+  flex-grow: 1;
+  padding: 4px;
+}
+
+.product .options .select select option:first-of-type {
+  color: #aaa;
+  font-weight: 500;
+}
+
+.product form > button[type="submit"] {
+  background: var(--main-color);
+  border: none;
+  color: #fff;
+  padding: 12px 60px;
+  border-radius: 3px;
+  width: fit-content;
+  align-self: flex-end;
+  margin: 30px 0;
+}
+
+.product form > button[type="submit"]:hover {
+  opacity: 0.8;
+}

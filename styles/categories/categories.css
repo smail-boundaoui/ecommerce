@@ -1,0 +1,135 @@
+.categories .heading {
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.categories .heading a {
+  background: var(--main-color);
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 3px;
+}
+
+.categories .category {
+  background: #eee;
+  margin-bottom: 20px;
+  padding: 15px;
+  border-radius: 3px;
+  box-shadow: 0 0 3px #999;
+  transition: box-shadow 0.1s;
+}
+
+.categories .category:hover {
+  box-shadow: 0 0 5px #666;
+}
+
+.categories .category .head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.categories .category .head h3 {
+  flex-grow: 1;
+}
+
+.categories .category .head > *:not(h3) {
+  margin-left: 30px;
+}
+
+.categories .category .head .prodNbr {
+  background: var(--main-color);
+  color: #fff;
+  border-radius: 30px;
+  padding: 6px 0;
+  width: 100px;
+  text-align: center;
+}
+
+.categories .category .head .prodNbr + button {
+  font-size: 0.9rem;
+  border: none;
+  color: #555;
+}
+
+.categories .category .head .prodNbr + button.visibilty {
+  visibility: hidden;
+}
+
+.categories .category .head .prodNbr + button.reverse svg {
+  transform: rotate(180deg);
+}
+
+.categories .category .head .prodNbr + button svg {
+  transition: transform 0.5s;
+}
+
+.categories .category .head .prodNbr + button:hover {
+  color: #000;
+  text-decoration: underline;
+}
+
+.categories .category .head .control a {
+  background-color: var(--green-color);
+  padding: 6px 10px;
+  color: #fff;
+  border: none;
+  font-size: 0.9rem;
+  border-radius: 3px;
+  transition: opacity 0.3s;
+}
+
+.categories .category .head .control a:last-of-type {
+  margin-left: 20px;
+  background-color: var(--del-color);
+}
+
+.categories .category .head .control a:hover {
+  opacity: 0.7;
+}
+
+.categories .category .head .control a svg {
+  margin-right: 6px;
+}
+
+.categories .category .body {
+  font-size: 0.9rem;
+  margin-top: 30px;
+}
+
+.categories .category .body.hidden {
+  display: none;
+}
+
+.categories .category .body .property {
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+.categories .category .body .property:not(:last-of-type) {
+  margin-bottom: 10px;
+}
+
+.categories .category .body .property .name {
+  font-weight: 500;
+}
+
+.categories .category .body .property .values {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.categories .category .body .property .values .value:not(:first-of-type) {
+  margin-left: 20px;
+}
+
+.categories .category .body .property .values .value:not(:first-of-type)::before {
+  content: "|";
+  margin-right: 20px;
+}

@@ -1,0 +1,72 @@
+.header {
+  background-color: #fff;
+  padding: 15px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 0 6px 0 #aaa;
+  border-radius: 3px;
+}
+
+.header .user {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.header .user .image {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 1px solid #aaa;
+  position: relative;
+}
+.header .user .image span {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 0;
+}
+
+.header .user .image img {
+  position: relative;
+  z-index: 1;
+}
+
+.header .user .text h4 {
+  color: #555;
+  letter-spacing: -1px;
+  margin-bottom: 3px;
+}
+
+.header .user .text span {
+  font-size: 0.8rem;
+  color: #999;
+}
+
+.header .email {
+  font-size: 0.9rem;
+  color: #878787;
+  text-decoration: overline;
+}
+
+.header .logout button {
+  background-color: #fff;
+  border: none;
+  padding: 8px 16px;
+  color: #9c9c9c;
+  transition: 0.3s;
+  box-shadow: 0 0 3px #747474;
+}
+
+.header .logout button:hover {
+  box-shadow: 0 0 5px var(--del-color);
+  color: var(--del-color);
+}
+
+.header .logout button span {
+  margin-right: 8px;
+  font-size: 0.9rem;
+}

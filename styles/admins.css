@@ -1,0 +1,108 @@
+.admins-container > div {
+  padding: 30px;
+  box-shadow: 0 0 6px #ccc;
+  margin-top: 30px;
+}
+
+/* Start Add */
+
+.admins-container .add {
+  margin-bottom: 50px;
+}
+
+.admins-container h3 {
+  margin-bottom: 26px;
+  font-weight: 600;
+  color: #444;
+}
+
+.admins-container .add form {
+  display: flex;
+  justify-content: space-between;
+  gap: 0 40px;
+}
+
+.admins-container .add form input {
+  flex-grow: 1;
+  padding: 10px;
+  border: none;
+  box-shadow: 0 0 6px #ccc;
+}
+
+.admins-container .add form input.err {
+  box-shadow: 0 0 4px var(--del-color);
+}
+
+.admins-container .add form button:hover {
+  box-shadow: none;
+}
+
+.admins-container .add form button {
+  padding: 10px 20px;
+  background-color: var(--main-color);
+  color: #fff;
+  border: none;
+  box-shadow: 0 0 6px #777;
+}
+
+/* End Add */
+
+/* Start Table */
+
+.admins-container .admins .table {
+  box-shadow: 0 0 6px #ccc;
+  padding: 20px;
+}
+
+.admins-container .admins .table hr {
+  margin: 20px 0;
+}
+
+.admins-container .admins .head,
+.admins-container .admins .admin {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.admins-container .admins .head * {
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #555;
+}
+
+.admins-container .admins .name {
+  width: 300px;
+}
+
+.admins-container .admins .email {
+  flex-grow: 1;
+}
+
+.admins-container .admins .date {
+  width: 260px;
+}
+
+.admins-container .admins .action {
+  direction: rtl;
+  width: 120px;
+}
+
+.admins-container .admins .action button {
+  color: var(--del-color);
+  background: #fff;
+  border: none;
+  box-shadow: 0 0 3px var(--del-color);
+  padding: 3px 7px;
+  font-size: 0.9rem;
+}
+
+.admins-container .admins .action button:hover {
+  box-shadow: 0 0 5px var(--del-color);
+}
+
+.admins-container .admins .admin:not(:last-of-type) {
+  margin-bottom: 20px;
+}
+
+/* End Table */

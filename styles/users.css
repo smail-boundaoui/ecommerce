@@ -1,0 +1,102 @@
+.users {
+  margin-top: 30px;
+}
+
+.users > div {
+  padding: 10px 0;
+}
+
+.users .user {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+  box-shadow: 0 0 3px #888;
+  padding: 6px 10px;
+  border-radius: 2px;
+  transition: background-color 0.2s, box-shadow 0.2s;
+}
+
+.users .user:hover {
+  background-color: #eee;
+  box-shadow: 0 0 3px inset #888;
+}
+
+.users .user .profile {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-grow: 1;
+  max-width: 500px;
+}
+
+.users .user .profile .image {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  border: 1px solid #888;
+  overflow: hidden;
+  margin-right: 10px;
+}
+
+.users .user .profile .name {
+  font-size: 0.8rem;
+  margin-bottom: 3px;
+}
+
+.users .user .profile .email {
+  font-size: 0.9rem;
+}
+
+.users .user .profile .email:hover {
+  text-decoration: underline;
+}
+
+.users .user .date {
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.users .user .control {
+  flex-grow: 1;
+  display: flex;
+  justify-content: flex-end;
+  font-size: 0.9rem;
+}
+
+.users .user .control .admin {
+  background: var(--main-color);
+  color: #fff;
+  padding: 6px 0;
+  width: 100px;
+  text-align: center;
+  border-radius: 30px;
+}
+
+.users .user .control button {
+  border: none;
+  color: #fff;
+  padding: 6px 0;
+  width: 100px;
+  transition: 0.3s;
+  color: #000;
+  background-color: #fff;
+}
+
+.users .user .control button.unblock {
+  box-shadow: 0 0 4px var(--green-color);
+  color: var(--green-color);
+}
+
+.users .user .control button.unblock:hover {
+  box-shadow: 0 0 8px var(--green-color);
+}
+
+.users .user .control button.block {
+  box-shadow: 0 0 4px var(--del-color);
+  color: var(--del-color);
+}
+
+.users .user .control button.block:hover {
+  box-shadow: 0 0 8px var(--del-color);
+}

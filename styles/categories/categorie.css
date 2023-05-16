@@ -1,0 +1,61 @@
+.add-cat {
+  width: 500px;
+  margin: auto;
+}
+
+.add-cat h2 {
+  margin-bottom: 40px;
+}
+
+.add-cat .head {
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0 30px;
+}
+
+.add-cat .head input {
+  flex-grow: 1;
+  padding: 10px;
+}
+
+.add-cat .head button {
+  padding: 10px 20px;
+  background-color: var(--main-color);
+  color: #fff;
+  border: 0;
+  border-radius: 3px;
+}
+
+.add-cat .props > button {
+  padding: 4px 10px;
+}
+
+.add-cat .props .prop {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+  font-size: 0.9rem;
+}
+
+.add-cat .props .prop input {
+  width: 300px;
+  padding: 4px;
+}
+
+.add-cat .props .prop input:first-of-type {
+  width: 150px;
+}
+
+.add-cat .props .prop span {
+  cursor: pointer;
+  padding: 5px;
+  border-radius: 3px;
+  background-color: var(--del-color);
+}
+
+input.inputErr {
+  border: 2px solid var(--del-color);
+}

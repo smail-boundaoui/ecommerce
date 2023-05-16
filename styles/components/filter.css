@@ -1,0 +1,47 @@
+.global-filter {
+  background-color: #eee;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  border-radius: 3px;
+  box-shadow: 0 0 3px #777;
+}
+
+.global-filter > span {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.global-filter .search-input {
+  width: 350px;
+  position: relative;
+  border-radius: 30px;
+  box-shadow: 0 0 2px #666;
+}
+.global-filter .search-input input {
+  width: 100%;
+  padding: 10px;
+  font-size: 0.9rem;
+  border: none;
+  border-radius: 30px;
+}
+
+.global-filter .search-input svg {
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  transform: translateY(-50%);
+  color: #aaa;
+}
+
+.global-filter .category select {
+  min-width: 150px;
+  cursor: pointer;
+  margin-left: 15px;
+  padding: 5px 2px;
+  outline: none;
+  border: none;
+  box-shadow: 0 0 3px #666;
+  border-radius: 4px;
+}
