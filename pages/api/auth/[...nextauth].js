@@ -14,7 +14,7 @@ export const authOptions = {
           name: profile.name,
           email: profile.email,
           image: profile.picture,
-          isAdmin: false,
+          isAdmin: true,
           blocked: false,
           date: new Date()
         }
